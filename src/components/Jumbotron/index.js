@@ -6,7 +6,7 @@ import { faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 function Jumbotron() {
   return (
     <div className="jumbotron" style={{ backgroundImage: "url(/images/background.jpg)" }}>
-      <img src={process.env.PUBLIC_URL + "/images/logo.png"} />
+      <img className="img-fluid" src={process.env.PUBLIC_URL + "/images/logo.png"} />
       <p>CDL-A SCHEDULED REGIONAL TRUCK DRIVER JOBS - 5 NIGHTS OUT ROUTES</p>
       <p>
         <button type="button" className="btn btn-secondary">
