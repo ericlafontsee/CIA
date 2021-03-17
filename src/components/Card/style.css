@@ -1,0 +1,13 @@
+.card{
+    border: none;
+}
+h2{
+    color: rgb(191, 35, 35);
+}
+
+
+.card-text{
+    color: black;
+    text-align: left;
+    font-size: 8pt;
+}
