@@ -1,3 +1,28 @@
 .jumbotron{
     width: 100%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+   margin: 0 auto !important;
+   padding-top: 20px;
+}
+
+p{
+    color: white;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.icon{
+    color: white;
+    margin-left: 5px;
+}
+
+.btn{
+    background: gray;
+    color: white;
 }
