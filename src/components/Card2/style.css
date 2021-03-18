@@ -1,0 +1,15 @@
+.arrow {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { left:0px; top:20px;}
+   
+  }
