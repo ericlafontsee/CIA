@@ -4,6 +4,8 @@ import "./App.css";
 import Jumbotron from "./components/Jumbotron";
 import Card from "./components/Card";
 import Card2 from "./components/Card2";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Jumbotron />
       <Card />
       <Card2 />
+      <Contact />
+      <Footer />
     </>
   );
 }
