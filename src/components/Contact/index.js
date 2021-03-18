@@ -114,6 +114,7 @@ function Contact() {
             <div class="col-md-4">
               <select id="inputState" class="form-select">
                 <option selected>State...</option>
+                {/* Maps through states array to provide user with all 50 options */}
                 {states.map((o, key) => {
                   return <option> {o}</option>;
                 })}

@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+//Event Listeners for closed Nav Menu
+
 export const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
     const listener = event => {

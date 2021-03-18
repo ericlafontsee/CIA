@@ -11,6 +11,7 @@ function Card2() {
           <div className="card-body">
             <img
               className="img-fluid mx-auto mt-0 pt-0"
+              alt="Hummer Trucker"
               src={process.env.PUBLIC_URL + "/images/trucker.jpg"}
             />
           </div>

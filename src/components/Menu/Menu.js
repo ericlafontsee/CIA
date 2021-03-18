@@ -2,6 +2,9 @@ import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
 
+
+//Open Nav Menu Component
+
 const Menu = ({ open, ...props }) => {
   
   const isHidden = open ? true : false;

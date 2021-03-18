@@ -14,6 +14,7 @@ function Card() {
     config: { duration: 1000 }
   });
 
+  //React-Spring Animation trigger by onClick of Apply Now Button
   const Demo = (
     <>
       <div onClick={() => toggle(!state)}>
@@ -43,10 +44,10 @@ function Card() {
         <div class="card-group col-8">
           <div className="card">
             <div className="card-body">
-              <h1 className="redText">
+              <div className="redText h1">
                 Want To Be Home This Weekend? With Hummer's 5-Nights-Out
                 Positions, You Will Be!
-              </h1>
+              </div>
             </div>
           </div>
           <div className="card">

@@ -6,8 +6,16 @@ import Card from "./components/Card";
 import Card2 from "./components/Card2";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { useCookies } from 'react-cookie';
 
 function App() {
+
+  const [cookies, setCookie] = useCookies(['name']);
+ 
+  function onChange(newName) {
+    setCookie('name', newName, { path: '/' });
+  }
+ 
   return (
     <>
       <Header />

@@ -4,6 +4,8 @@
 
 .redText{
     color: #c31d23;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -11,12 +13,6 @@
     color: #000000;
     text-align: left;
     font-size: 8pt;
-    padding-top: 20px;
+    padding-top: 10px;
 }
-
-h1{
-    font-weight: bold;
-    font-style: italic;
-}
-
 

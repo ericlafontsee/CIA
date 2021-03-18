@@ -12,6 +12,7 @@ function Jumbotron() {
         >
           <img
             className="img-fluid p-3"
+            alt="Hummer Logo"
             src={process.env.PUBLIC_URL + "/images/logo.png"}
           />
           <p className="jumbotronText">
