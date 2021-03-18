@@ -1,4 +1,18 @@
-.contact{
-    background: black;
-    width: 100%;
+.contact {
+  background: black;
+  width: 100%;
+  overflow: hidden;
 }
+
+h5 {
+  color: white;
+  font-style: italic;
+  padding: 20px;
+}
+
+
+.dropdown-toggle {
+    background: white;
+    color: black;
+}
+

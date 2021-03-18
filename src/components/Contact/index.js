@@ -1,81 +1,151 @@
 import React from "react";
 import "./style.css";
 
-
-
 function Contact() {
-
-  const states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
-
+  const states = [
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "District of Columbia",
+    "Florida",
+    "Georgia",
+    "Guam",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Northern Mariana Islands",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming"
+  ];
 
   return (
-<div className="container contact">
-    <form>
-      <div className="mb-3 row">
-        <input
-          type="name"
-          className="form-control col-md-4"
-          id="exampleDropdownFormEmail1"
-          placeholder="First Name"
-        />
-        <input
-          type="password"
-          className="form-control col-md-4"
-          id="exampleDropdownFormPassword1"
-          placeholder="Phone Number"
-        />
-        <input
-          type="password"
-          className="form-control col-md-4"
-          id="exampleDropdownFormPassword1"
-          placeholder="City"
-        />
+    <div className="container-fluid contact" style={{ background: "black" }}>
+      <div className="row justify-content-center">
+        <div >
+          <h5>
+            Run Hard, Get Home, Get Paid - It's That Simple At Hummer Trucking.
+            Learn More Today!
+          </h5>
+        </div>
       </div>
-      <div className="mb-3 row">
-        <input
-          type="name"
-          className="form-control col-md-4"
-          id="exampleDropdownFormEmail1"
-          placeholder="Last Name"
-        />
-        <input
-          type="password"
-          className="form-control col-md-4"
-          id="exampleDropdownFormPassword1"
-          placeholder="Email"
-        />
-        <input
-          type="password"
-          className="form-control col-md-4"
-          id="exampleDropdownFormPassword1"
-          placeholder="State"
-        />
-
-        <ul class="nav">
-          <li>
-            <div class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      <div className="row justify-content-center">
+        <div className="col-md-3 p-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <div className="col-md-3 p-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Phone Number"
+            aria-label="Phone Number"
+          />
+        </div>
+        <div className="col-md-3 p-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="City"
+            aria-label="City"
+          />
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="col-sm-3 p-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Last Name"
+            aria-label="Last Name"
+          />
+        </div>
+        <div className="col p-2">
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Email"
+            aria-label="Email"
+          />
+        </div>
+        <div className="col p-2">
+            <div className="dropdown">
+              <button
+                className="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 State
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              </button>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+              >
                 {states.map((o, key) => {
-              return(<li>
-                <a class="dropdown-item" href="#">
-                {o}
-                </a>
-                  </li>
-                );
-              })}3
-              </ul>
+                  return (
+                    <a className="dropdown-item" href="#">
+                      {o}
+                    </a>
+                  );
+                })}
+              </div>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
 
-      <button type="submit" className="btn btn-danger">
+      <button
+        type="submit"
+        className="btn"
+        style={{ background: "#c31d23", border: "1px outset white" }}
+      >
         Submit
       </button>
-    </form>
     </div>
   );
 }

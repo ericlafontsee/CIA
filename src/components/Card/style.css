@@ -1,13 +1,21 @@
 .card{
     border: none;
 }
-h2{
-    color: rgb(191, 35, 35);
+
+.redText{
+    color: #c31d23;
 }
 
 
-.card-text{
+.summary{
     color: black;
     text-align: left;
     font-size: 8pt;
+    padding-top: 20px;
 }
+
+h1{
+    font-weight: bold;
+    font-style: italic;
+}
+
