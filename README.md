@@ -5,7 +5,7 @@ This is a landing page mock-up for Conversion Interactive Agency. I chose to use
 
 
 Deployed version:  
-https://blooming-island-13857.herokuapp.com/
+https://salty-ravine-13691.herokuapp.com/
 
 ## Usage
 ![image](./public/images/landingpage.png)
