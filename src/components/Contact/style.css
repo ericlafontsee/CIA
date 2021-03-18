@@ -5,10 +5,11 @@
   min-height: 350px;
 }
 
-h5 {
+.h5 {
   color: #ffffff;
   font-style: italic;
   padding: 20px;
+  text-align: center;
 }
 
 

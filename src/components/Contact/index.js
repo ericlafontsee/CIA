@@ -63,11 +63,11 @@ function Contact() {
       <div className="row justify-content-center">
         <div className="col-8">
           <div className="row justify-content-center">
-            <div className="col-md-8">
-              <h5>
+            <div className="col">
+              <div className="h5">
                 Run Hard, Get Home, Get Paid - It's That Simple At Hummer
                 Trucking. Learn More Today!
-              </h5>
+              </div>
             </div>
           </div>
           <form class="row g-3">
@@ -75,7 +75,6 @@ function Contact() {
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
                 placeholder="First Name"
               />
             </div>
@@ -83,7 +82,6 @@ function Contact() {
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
                 placeholder="Phone Number"
               />
             </div>
@@ -91,7 +89,6 @@ function Contact() {
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
                 placeholder="City"
               />
             </div>
@@ -99,7 +96,6 @@ function Contact() {
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
                 placeholder="Last Name"
               />
             </div>
@@ -107,7 +103,6 @@ function Contact() {
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress2"
                 placeholder="Email"
               />
             </div>
