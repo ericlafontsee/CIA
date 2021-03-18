@@ -113,10 +113,9 @@ function Contact() {
                 aria-label="Email"
               />
             </div>
-            <div className="col p-2">
-              <div className="dropdown">
+            <div className="col dropdown p-2">
                 <button
-                  className="btn dropdown-toggle"
+                  className="btn col dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton"
                   data-toggle="dropdown"
@@ -137,11 +136,10 @@ function Contact() {
                     );
                   })}
                 </div>
-              </div>
             </div>
           </div>
           <div className="row">
-            <div className="col offset-8">
+            <div className="col offset-8 mt-5">
               <button
                 type="submit"
                 className="btn"

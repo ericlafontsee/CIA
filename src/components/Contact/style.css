@@ -2,6 +2,7 @@
   background: black;
   width: 100%;
   overflow: hidden;
+  min-height: 350px;
 }
 
 h5 {
@@ -10,9 +11,14 @@ h5 {
   padding: 20px;
 }
 
+.dropdown-menu{
+  max-height: 200px;
+  overflow-y: auto;
+}
 
 .dropdown-toggle {
     background: white;
     color: black;
+    text-align: left;
 }
 
