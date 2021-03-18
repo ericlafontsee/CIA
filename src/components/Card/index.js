@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +7,36 @@ import { faPhoneSquareAlt } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 function Card() {
+  const [state, toggle] = useState(true);
+  const { x } = useSpring({
+    from: { x: 0 },
+    x: state ? 1 : 0,
+    config: { duration: 1000 }
+  });
+
+  const Demo = (
+    <>
+      <div onClick={() => toggle(!state)}>
+        <animated.div
+          style={{
+            opacity: x.interpolate({ range: [0, 1], output: [0.3, 1] }),
+            transform: x
+              .interpolate({
+                range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                output: [1, 0.97, 0.9, 1.1, 0.9, 1.1, 1.03, 1]
+              })
+              .interpolate((x) => `scale(${x})`)
+          }}
+        >
+          APPLY NOW
+          <span>
+            <FontAwesomeIcon className="icon" icon={faExternalLinkSquareAlt} />
+          </span>
+        </animated.div>
+      </div>
+    </>
+  );
+
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
@@ -26,13 +57,7 @@ function Card() {
                   className="col mr-1 btn apply"
                   style={{ background: "#c31d23" }}
                 >
-                  APPLY NOW
-                  <span>
-                    <FontAwesomeIcon
-                      className="icon"
-                      icon={faExternalLinkSquareAlt}
-                    />
-                  </span>
+                  {Demo}
                 </button>
                 <button
                   type="button"
@@ -48,7 +73,7 @@ function Card() {
               <div className="row m-0">
                 <button
                   type="button"
-                  className="col-12 btn btn-dark mt-2 searchBtn"
+                  className="col-12 btn mt-2 searchBtn"
                   style={{ background: "black" }}
                 >
                   SEARCH JOBS BY AREA
