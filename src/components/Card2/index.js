@@ -5,7 +5,7 @@ function Card2() {
   return (
     <div className="container-fluid" style={{ background: "#eeeeee" }}>
       <div className="row justify-content-center">
-          <div className="card col-3" style={{ background: "none" }}>
+          <div className="card col-4 pl-0 pr-0" style={{ background: "none" }}>
             <div className="card-body">
               <img
                 className="img-fluid mx-auto"
@@ -13,7 +13,7 @@ function Card2() {
               />
             </div>
           </div>
-          <div className="card col-3" style={{ background: "none" }}>
+          <div className="card col-4 pl-0 pr-0" style={{ background: "none" }}>
             <div className="card-body">
               <div className="card-title" style={{fontWeight: 'bold'}}>
                 Hummer's CDL A Scheduled Regional 5-nights-out truck driver

@@ -61,7 +61,7 @@ function Contact() {
   return (
     <div className="container-fluid contact" style={{ background: "black" }}>
       <div className="row justify-content-center">
-        <div className="col-6 p-2">
+        <div className="col-8">
           <div className="row justify-content-center">
             <div>
               <h5>
@@ -120,7 +120,7 @@ function Contact() {
                   id="dropdownMenuButton"
                   data-toggle="dropdown"
                   aria-haspopup="true"
-                  aria-expanded="false"
+                  aria-expanded="true"
                 >
                   State
                 </button>

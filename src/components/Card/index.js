@@ -8,8 +8,8 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 function Card() {
   return (
     <div className="container-fluid">
-      <div className="row justify-content-center">
-        <div className="card col-3 ">
+      <div className="row justify-content-center card-group">
+        <div className="card col-4 pl-0 pr-0 ">
           <div className="card-body">
             <h1 className="redText">
               Want To Be Home This Weekend? With Hummer's 5-Nights-Out
@@ -17,7 +17,7 @@ function Card() {
             </h1>
           </div>
         </div>
-        <div className="card col-3">
+        <div className="card col-4">
           <div className="card-body">
             <div className="row">
               <button

@@ -6,7 +6,7 @@ function Header() {
   return (
     <header id="header" className="container-fluid">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col">
           <Navbar/>
         </div>
       </div>
