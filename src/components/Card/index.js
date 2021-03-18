@@ -9,7 +9,7 @@ function Card() {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center">
-        <div className="card col-3">
+        <div className="card col-3 ">
           <div className="card-body">
             <h1 className="redText">
               Want To Be Home This Weekend? With Hummer's 5-Nights-Out
@@ -22,7 +22,7 @@ function Card() {
             <div className="row">
               <button
                 type="button"
-                className=" col-6 btn apply"
+                className="col mr-1 btn apply"
                 style={{ background: "#c31d23" }}
               >
                 APPLY NOW
@@ -35,7 +35,7 @@ function Card() {
               </button>
               <button
                 type="button"
-                className="col-6 btn phone"
+                className="col ml-1 btn phone"
                 style={{ background: "#787878" }}
               >
                 &#40;866&#41; 913-1352
@@ -47,7 +47,7 @@ function Card() {
             <div className="row">
               <button
                 type="button"
-                className="col-12 btn btn-dark col-md-12 mt-1 searchBtn"
+                className="col-12 btn btn-dark mt-2 searchBtn"
                 style={{ background: "black" }}
               >
                 SEARCH JOBS BY AREA
