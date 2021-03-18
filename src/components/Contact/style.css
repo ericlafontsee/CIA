@@ -10,7 +10,7 @@ h5 {
   font-style: italic;
   padding: 20px;
 }
-
+/* 
 .dropdown-menu{
   max-height: 200px;
   overflow-y: auto;
@@ -20,5 +20,14 @@ h5 {
     background: white;
     color: black;
     text-align: left;
-}
+} */
 
+
+#inputState{
+  height: calc(1.5em + .75rem + 2px);
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}

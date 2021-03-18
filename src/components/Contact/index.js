@@ -63,92 +63,76 @@ function Contact() {
       <div className="row justify-content-center">
         <div className="col-8">
           <div className="row justify-content-center">
-            <div>
+            <div className="col-md-8">
               <h5>
                 Run Hard, Get Home, Get Paid - It's That Simple At Hummer
                 Trucking. Learn More Today!
               </h5>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col p-2">
+          <form class="row g-3">
+            <div class="col-md-4 pb-3">
               <input
                 type="text"
-                className="form-control"
-                placeholder="First name"
-                aria-label="First name"
+                class="form-control"
+                id="inputAddress2"
+                placeholder="First Name"
               />
             </div>
-            <div className="col p-2">
+            <div class="col-md-4">
               <input
                 type="text"
-                className="form-control"
+                class="form-control"
+                id="inputAddress2"
                 placeholder="Phone Number"
-                aria-label="Phone Number"
               />
             </div>
-            <div className="col p-2">
+            <div class="col-md-4">
               <input
                 type="text"
-                className="form-control"
+                class="form-control"
+                id="inputAddress"
                 placeholder="City"
-                aria-label="City"
               />
             </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col p-2">
+            <div class="col-md-4">
               <input
                 type="text"
-                className="form-control"
+                class="form-control"
+                id="inputAddress2"
                 placeholder="Last Name"
-                aria-label="Last Name"
               />
             </div>
-            <div className="col p-2">
+            <div class="col-md-4">
               <input
-                type="email"
-                className="form-control"
+                type="text"
+                class="form-control"
+                id="inputAddress2"
                 placeholder="Email"
-                aria-label="Email"
               />
             </div>
-            <div className="col dropdown p-2">
-                <button
-                  className="btn col dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="true"
-                >
-                  State
-                </button>
-                <div
-                  className="dropdown-menu"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  {states.map((o, key) => {
-                    return (
-                      <a className="dropdown-item" href="#">
-                        {o}
-                      </a>
-                    );
-                  })}
-                </div>
+            <div class="col-md-4">
+              <select id="inputState" class="form-select">
+                <option selected>State...</option>
+                {states.map((o, key) => {
+                  return <option> {o}</option>;
+                })}
+              </select>
             </div>
-          </div>
-          <div className="row">
-            <div className="col offset-8 mt-5">
+            <div className="col-12 offset-md-8 mt-5 mb-2">
               <button
                 type="submit"
                 className="btn"
-                style={{ background: "#c31d23", border: "1px outset white", marginLeft: '-7px' }}
+                style={{
+                  background: "#c31d23",
+                  border: "1px outset #ffffff",
+                  marginLeft: "2px"
+                }}
               >
                 Submit
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
