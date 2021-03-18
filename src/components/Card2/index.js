@@ -43,7 +43,7 @@ function Card2() {
                 Starting pay based on most recent six years of work history.
               </li>
               <li>
-                Annual pay based on most recent six yeras of work history.
+                Annual pay based on most recent six years of work history.
               </li>
               <li>
                 Benefits, bonus programs and too many advantages to list here!
