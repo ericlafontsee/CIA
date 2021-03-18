@@ -5,10 +5,10 @@ import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 
 function Jumbotron() {
   return (
-    <div className="container-fluid contact"   style={{ backgroundImage: "url(/images/background.jpg)" }}>
+    <div className="container-fluid jumboContainer"   style={{ backgroundImage: "url(/images/background.jpg)" }}>
       <div className="row justify-content-center">
         <div
-          className="jumbotron col-8 pl-0 pr-0"
+          className="jumbotron col-8 pl-0 pr-0 "
         >
           <img
             className="img-fluid p-3"

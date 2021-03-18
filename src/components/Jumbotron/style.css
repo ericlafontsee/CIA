@@ -1,3 +1,6 @@
+.jumboContainer{
+min-height: 300px;
+}
 .jumbotron {
   width: 100%;
   background: none;

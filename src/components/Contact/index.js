@@ -70,8 +70,8 @@ function Contact() {
               </div>
             </div>
           </div>
-          <form class="row g-3">
-            <div class="col-md-4 pb-3">
+          <form class="row g-3 form">
+            <div class="col-md-4">
               <input
                 type="text"
                 class="form-control"

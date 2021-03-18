@@ -3,7 +3,7 @@
   width: 100%;
   overflow: hidden;
   min-height: 350px;
-  max-height: 500px;
+  padding-bottom: 20px;
 }
 
 .h5 {
@@ -21,4 +21,8 @@
   font-size: 1rem;
   border: 1px solid #ced4da;
   border-radius: .25rem;
+}
+
+.form > div{
+  padding-bottom: 20px;
 }
